@@ -13,6 +13,7 @@ header {
 
 article {
     width: 70%;
+    float: left;
 }
 
 button {
@@ -34,9 +35,10 @@ footer {
     padding: 5px;
     margin: 10px;
     box-shadow: 15px 15px 12px dimgray;
+    float: right;
 }
 
-h5 {
+h5, blockquote {
     font-style: italic;
     text-align: center;
     margin: 0;
