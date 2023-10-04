@@ -1,0 +1,10 @@
+-- kw1
+SELECT marka, rocznik FROM samochody WHERE kolor = 'niebieski'; 
+-- kw2
+SELECT COUNT(*) FROM `samochody` WHERE marka = 'Toyota' or marka = 'Opel' and stan = 'bardzo dobry'; 
+-- kw3
+UPDATE `samochody` SET stan='dobry' WHERE rocznik < 2004;
+-- kw4
+CREATE USER 'jan'@'%' IDENTIFIED VIA mysql_native_password USING '***';GRANT USAGE ON *.* TO 'jan'@'%' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0; 
+-- kw5
+GRANT SELECT, INSERT, UPDATE ON `samochody`.* TO 'jan'@'%'; 

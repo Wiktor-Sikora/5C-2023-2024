@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <section id="header">
+        <h1>Calodobowa stacja paliw</h1>
+    </section>
+    <div id="menu">
+        <a id="links" href="stacja.html">
+            <img src="home.png" alt="" width="100">
+        </a>
+        <a id="links" href="obliczenia.html">
+            <img src="znak.png" alt="" width="100">
+        </a>
+        <a id="links" href="kwerendy.txt">Pobierz dokumenty</a>
+    </div>
+    <div id="blok-left">
+        <h2>Orientacyjny koszt paliwa</h2>
+        <label for="fuel">Rodzaj paliwa (1-benzyna, 2-olej napedowy)</label><br>
+        <input type="number" name="fuel" id="fuel"><br>
+        <label for="liters">Rodzaj paliwa (1-benzyna, 2-olej napedowy)</label><br>
+        <input type="number" name="liters" id="liters"><br>
+        <button onclick="oblicz()">Oblicz</button>
+        <p id="wynik">Koszt paliwa: </p>
+    </div>
+    <div id="blok-right"><img id="samochod" src="samochod.jpg" alt="samochod"></div>
+    <div id="footer"><h1>Strone opracowal: Wiktor Sikora</h1></div>
+</body>
+<script>
+    function oblicz() {
+        let fuel = document.getElementById('fuel').value;
+        let liters = document.getElementById('liters').value;
+        let wynik = 0 
+        console.log(fuel, liters)
+        if (fuel == 1) {
+            wynik = 4 * liters
+        } else if (fuel == 2) {
+            wynik = 3.5 * liters
+        } 
+        document.getElementById('wynik').textContent = `Koszt paliwa ${wynik} zl`
+    }
+</script>
+</html>
