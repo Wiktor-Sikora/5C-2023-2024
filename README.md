@@ -2,6 +2,9 @@
 
 Repo for middle school stuff
 
+**Lesson exercises:**
+* [php forms](/04_10_2023)
+
 **EE.09 / INF.03 exams:**
 * [EE.09-03-23.01-SG - gazeta / kolor](/EE.09-03-23.01-SG)
 * [EE.09-02-19.06 - stacja paliw](/EE.09-02-19.06)
