@@ -1,0 +1,46 @@
+* {
+    font-family: Cambria;
+}
+
+.baner-footer {
+    background-color: #829EB9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebars {
+    background-color: #b3c6d9;
+    height: 400px;
+    width: 25%;
+    padding-top: 100px;
+}
+
+.main {
+    background-color: #e0e9f1;
+    height: 400px;
+    width: 50%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid dimgray;
+    margin: auto;
+    width: 80%;
+}
+
+td {
+    border: 1px solid dimgray;
+}
+
+td:hover {
+    background-color: steelblue;
+    color: white
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
