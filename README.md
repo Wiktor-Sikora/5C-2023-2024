@@ -1,6 +1,7 @@
 # 5C-2023-2024
 
 Repo for middle school stuff
+I'm forced to code in PHP 😢
 
 **Lesson exercises:**
 * [php forms](/04_10_2023)
