@@ -53,7 +53,6 @@
             echo "$i ";
             $i -= 4;
         } while ($i >= $x);
-
     }
     ?>
 </body>
