@@ -1,0 +1,63 @@
+body {
+    font-family: Helvetica;
+}
+
+header > div:nth-child(1), header > div:nth-child(3) {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    width: 25%;
+    height: 80px;
+}
+
+header > div:nth-child(2) {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    width: 50%;
+    height: 80px;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(224, 255, 255);
+    padding: 40px;
+}
+
+html > div {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(70, 130, 180);
+    width: 50%;
+    height: 200px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(224, 255, 255);
+}
+
+table {
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0%;
+}
+
+td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+}
+
+th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    background-color: blue;
+    color: white
+}
+
+header {
+    display: flex;
+}
