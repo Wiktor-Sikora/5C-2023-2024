@@ -27,27 +27,29 @@
                 <th>OPADY [mm/h]</th>
                 <th>CIŚNIENIE [hPa]</th>
             </thead>
-            <tr>
-                <td>dupa</td>
-                <td>dupa</td>
-                <td>dupa</td>
-                <td>dupa</td>
-                <td>dupa</td>
-            </tr>
-            <tr>
-                <td>dupa</td>
-                <td>dupa</td>
-                <td>dupa</td>
-                <td>dupa</td>
-                <td>dupa</td>
-            </tr>
-            <tr>
-                <td>dupa</td>
-                <td>dupa</td>
-                <td>dupa</td>
-                <td>dupa</td>
-                <td>dupa</td>
-            </tr>
+            <?php 
+                $host = "localhost";
+                $user = "root";
+                $pass = "";
+                $db = "prognoza";
+    
+                $polaczenie = mysqli_connect($host, $user, $pass, $db);
+
+                $zapytanie = "SELECT * FROM pogoda";
+                $result = mysqli_query($polaczenie, $zapytanie);
+
+                while($row = mysqli_fetch_row($result)) {
+                    echo "<tr>";
+                    echo "<td>$row[2]</td>";
+                    echo "<td>$row[3]</td>";
+                    echo "<td>$row[4]</td>";
+                    echo "<td>$row[5]</td>";
+                    echo "<td>$row[6]</td>";
+                    echo "</tr>";
+                }
+
+                mysqli_close($polaczenie)
+            ?>
         </table>
     </main>
     <div>

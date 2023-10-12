@@ -22,9 +22,9 @@ main {
     padding: 40px;
 }
 
-html > div {
-    display: flex;
-    flex-wrap: wrap;
+body > div {
+    float: left;
+    text-align: center;
     background-color: rgb(70, 130, 180);
     width: 50%;
     height: 200px;
