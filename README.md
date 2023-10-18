@@ -6,6 +6,7 @@ I'm forced to code in PHP 😢
 **Lesson exercises:**
 * [php forms](/04_10_2023)
 * [php loops & forms](/05_10_2023)
+* [php forms & SQL connections](/18_10_2023)
 
 **EE.09 / INF.03 exams:**
 * [EE.09-03-23.01-SG - gazeta / kolor](/EE.09-03-23.01-SG)

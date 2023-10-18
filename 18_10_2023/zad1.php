@@ -19,11 +19,6 @@
 
     <?php 
         if (!empty($_POST)) {
-            $host = "localhost";
-            $user = "root";
-            $pass = "";
-            $db = "prognoza";
-
             $polaczenie = mysqli_connect("localhost", "root", "", "prognoza");
 
             $miasta_id = $_POST['miasta_id']; 
