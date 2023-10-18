@@ -6,7 +6,7 @@
     <title>Insert Pogoda</title>
 </head>
 <body>
-    <h2>Dodaj nowy rekord pogodowy</h2>
+    <h2>Znajdź rekord pogodowy</h2>
     <form action="" method="POST">
         <label for="">Podaj ID rekordu który chcesz wyszukać</label>
         <input type="number" name="id" placeholder="ID"><br>
@@ -20,7 +20,7 @@
 
             $weather_id = $_POST['id']; 
 
-            $sql = "SELECT * from pogoda WHERE id = $weather_id"; 
+            $sql = "SELECT * FROM pogoda WHERE id = $weather_id"; 
 
             if ($result = mysqli_query($con, $sql)) {
                 if (mysqli_num_rows($result) > 0) {
