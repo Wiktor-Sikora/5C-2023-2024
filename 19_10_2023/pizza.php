@@ -9,15 +9,15 @@
     <h2>Koszt twojej trasy</h2>
     <?php 
         if (!empty($_POST)) {
-            @$price = $_POST['price']; 
             @$lenght = $_POST['lenght']; 
-            @$fuel = $_POST['fuel']; 
-            
-            echo "<p>Aktualna cena paliwa: $price PLN</p>"; 
-            echo "<p>Dystans który chcesz przejechać: $lenght km</p>"; 
-            echo "<p>Średnie spalanie: $fuel l/100km</p>";
-            
-            echo "<p>Koszt przejazdu: " . ($fuel / $lenght) * 100 * $price  . " PLN</p>";
+            @$warm = $_POST['warm']; 
+
+            $price = $lenght * 0.50;
+
+            if ($warm) {
+                $price *= 1.15;
+            }
+            echo "<p>Koszt dowozu: $price zł</p>";
         } else {
             echo "Prześlij coś";
         }

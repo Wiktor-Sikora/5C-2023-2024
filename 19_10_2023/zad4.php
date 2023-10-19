@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona logowania</title>
+    <title>Kalkulator kosztu dowozu</title>
 </head>
 <body>
-    <h2>Oblicz cenę paliwa</h2>
-    <form action="koszt.php" method="POST">
-        <label for="">Podaj aktualny koszt benzyny:</label><br>
-        <input type="number" step="0.01" name="price" placeholder="PLN" required><br>
-        <label for="">Podaj ilość kilometrów którą zamierzasz przejechać:</label><br>
+    <h2>Oblicz cenę dowozu</h2>
+    <form action="pizza.php" method="POST">
+        <label for="">Podaj dystans:</label><br>
         <input type="number" step="0.01" name="lenght" placeholder="Km" required><br>
-        <label for="">Podaj średnie spalanie w swoim gruzie:</label><br>
-        <input type="number" step="0.01" name="fuel" placeholder="Litry na 100km" required><br>
+        <label for="">Ciepła</label>
+        <input type="checkbox" name="warm"><br>
         <button type="submit">Wyślij</button><br>
     </form>
 </body>
