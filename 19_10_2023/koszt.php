@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona logowania</title>
+    <title>Kalkulator ceny</title>
 </head>
 <body>
-    <h2>Zaloguj się</h2>
-    <form action="" method="POST">
-        <label for="">Login:</label><br>
-        <input type="text" name="login" placeholder="twój login" required><br>
-        <label for="">Hasło:</label><br>
-        <input type="password" name="password" placeholder="twoje hasło" required><br>
-        <button type="submit">Wyślij</button><br>
-    </form>
+    <h2>Koszt twojej trasy</h2>
+    <?php 
+        if (!empty($_POST)) {
+            @$price = $_POST['price']; 
+            @$lenght = $_POST['lenght']; 
+            @$fuel = $_POST['fuel']; 
+            
+            echo "<p>Aktualna cena paliwa: $price$</p>"; 
+            echo "<p>Dystans który chcesz przejechać: $lenght</p>"; 
+            echo "<p>Średnie spalanie: $$</p>"; 
+        } else {
+            echo "Prześlij coś"
+        }
 
+    ?>
 
     <?php 
         if (!empty($_POST)) {
