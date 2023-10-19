@@ -13,41 +13,15 @@
             @$lenght = $_POST['lenght']; 
             @$fuel = $_POST['fuel']; 
             
-            echo "<p>Aktualna cena paliwa: $price$</p>"; 
-            echo "<p>Dystans który chcesz przejechać: $lenght</p>"; 
-            echo "<p>Średnie spalanie: $$</p>"; 
+            echo "<p>Aktualna cena paliwa: $price PLN</p>"; 
+            echo "<p>Dystans który chcesz przejechać: $lenght km</p>"; 
+            echo "<p>Średnie spalanie: $fuel l/100km</p>";
+            
+            echo "<p>Koszt przejazdu: " . ($fuel / $lenght) * 100 * $price  . "</p>";
         } else {
-            echo "Prześlij coś"
+            echo "Prześlij coś";
         }
 
-    ?>
-
-    <?php 
-        if (!empty($_POST)) {
-            $con = mysqli_connect("localhost", "root", "", "sikora");
-
-            @$login = $_POST['login']; 
-            @$password = $_POST['password']; 
-
-            $sql = "SELECT * FROM users WHERE login = '$login'"; 
-
-            if ($result = mysqli_query($con, $sql)) {
-                if (mysqli_num_rows($result) > 0) {
-                    if ($password == mysqli_fetch_row($result)[2]) {
-                        echo "Zalogowano";
-                    } else {
-                        echo "Nie poprawne hasło";
-                    };
-                } else {
-                    echo "<p>Nie ma użytkownika o loginie: $login</p>";
-                }
-            } else {
-                echo "Error, " . mysqli_error($con);
-            }
-
-            mysqli_close($con);
-
-        }
     ?>
 </body>
 </html>
