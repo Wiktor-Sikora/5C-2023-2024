@@ -15,5 +15,6 @@ I'm forced to code in PHP 😢
 * [EE.09-02-19.06 - stacja paliw](/EE.09-02-19.06)
 * [INF.03-01-23.01-SG - malarz](/INF.03-01-23.01-SG)
 * [EE.09-02-22.01-SG - pogoda](/11_10_2023)
+* [EE.09-06-21.01-SG - lotnisko](/26_10_2023)
 
 **IT exams:**

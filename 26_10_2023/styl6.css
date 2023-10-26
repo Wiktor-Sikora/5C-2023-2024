@@ -1,0 +1,61 @@
+header > div:nth-child(1) {
+    text-align: center;
+    width: 75%;
+    height: 150px;
+    font-size: 200%;
+}
+
+header > div:nth-child(2) {
+    width: 25%;
+    height: 150px;
+}
+
+main {
+    background-color: rgb(128, 0, 0);
+    padding: 50px;
+    text-transform: uppercase;
+}
+
+footer > div:nth-child(1), 
+footer > div:nth-child(3) {
+    width: 20%;
+    padding-top: 90px;
+}
+
+footer > div:nth-child(2) {
+    text-align: center;
+    width: 60%;
+}
+
+body {
+    font-family: Arial;
+    background-color: rgb(244, 164, 96);
+    color: white;
+}
+
+p {
+    font-size: 150%;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: rgb(169, 169, 169);
+}
+
+p:hover {
+    background-color: rgb(169, 169, 169);
+}
+
+header, footer {
+    display: flex;
+} 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    padding: 5px;
+}
