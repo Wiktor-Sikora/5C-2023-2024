@@ -7,8 +7,8 @@
 </head>
 <body>
     <?php
-        if (isset($_COOKIE['username'])) {
-            unset($_COOKIE['username']);
+        if (isset($_COOKIE["username"])) {
+            setcookie("username", "", time() - 3600, "/"); 
             echo "<p>usunięto ciasteczko username</p>"; 
         } else {
             echo "<p>brak ciasteczka username</p>"; 

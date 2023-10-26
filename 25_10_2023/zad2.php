@@ -7,8 +7,8 @@
 </head>
 <body>
     <?php
-        if(isset($_COOKIE['username'])) {
-            echo "<p>Ciasteczko username: " . $_COOKIE['username'] . "</p>";
+        if(isset($_COOKIE["username"])) {
+            echo "<p>Ciasteczko username: " . $_COOKIE["username"] . "</p>";
         } else {
             echo "brak ciasteczka username";
         }

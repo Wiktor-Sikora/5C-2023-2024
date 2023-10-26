@@ -1,5 +1,5 @@
 <?php 
-    setcookie('username', 'zmien wartosc pliku cookie o nazwie username', time() + 86400 * 30, '/');
+    setcookie("username", "zmien wartosc pliku cookie o nazwie username", time() + 86400 * 30, "/");
 ?>
 
 
