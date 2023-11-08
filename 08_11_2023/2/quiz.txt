@@ -5,4 +5,10 @@ Zad 2
   Odp: A
 
 Zad 3
-  Odp: 
+  Odp: B
+
+Zad 4
+  Odp: C
+
+Zad 5
+  Odp: A
