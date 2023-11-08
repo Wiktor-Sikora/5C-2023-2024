@@ -9,6 +9,7 @@ I'm forced to code in PHP 😢
 * [php forms & SQL connections](/18_10_2023)
 * [php login, forms, simple calculations](/19_10_2023)
 * [php cookies](/25_10_2023)
+* [php ifs](/08_11_2023)
 
 **EE.09 / INF.03 exams:**
 * [EE.09-03-23.01-SG - gazeta / kolor](/EE.09-03-23.01-SG)
