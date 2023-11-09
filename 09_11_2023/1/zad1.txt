@@ -1,0 +1,4 @@
+Pętle umożliwiają programistą powtarzanie danych czynności x razy. 
+Pętli możemy również użyć gdy dana zmienna startowa lub końcowa nie jest
+znana i umożliwia to rozwiązywanie problemów, które inaczej można by 
+wykonać tylko rekurencją.

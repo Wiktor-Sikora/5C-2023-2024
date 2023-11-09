@@ -1,0 +1,14 @@
+zad. 1
+  Odp: D
+
+zad. 2
+  Odp: B
+
+zad. 3
+  Odp: B
+
+zad. 4
+  Odp: D
+
+zad. 5
+  Odp: D
