@@ -1,0 +1,15 @@
+Walety:
+  - Dane są łatwe do kategoryzowania i przechowywania,
+  - Łatwość w wydobyciu i agregacji danych,
+  - Wielu użytkowników może mieć dostęp do tych samych danych jednocześnie,
+  - Brak duplikacji danych,
+  - Łatwy język zapytań - najczęściej SQL,
+  - Bezpieczeństwo danych, w wielu bazach relacyjnych można też ustawić konta
+    dla konkretnych użytkowników
+
+Zady:
+  - Brak elastyczności podczas zmian, bazę danych trzeba często planować z góry,
+  - Trudności ze skalowaniem,
+  - Wymagają optymalizacji przy zwiększeniu się zasobu danych,
+  - Bez specjalnych narzędzi bardzo trudno jest obsłużyć duże ilości nieustrukturyzowanych
+    danych (big data)

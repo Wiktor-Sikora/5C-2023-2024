@@ -1,0 +1,6 @@
+Nazwa bazy danych       Adres strony WWW producenta         Najnowsza wersja        Licencja
+MySQL                   https://www.mysql.com               8.2.0                   GPL lub komercyjna
+PostgreSQL              https://www.postgresql.org          16.1                    PostgreSQL License
+SQLite3                 https://www.sqlite.org              3.44.0                  public domain
+MongoDB                 https://www.mongodb.com             7.1.0                   SSPL lub komercyjna
+Redis                   https://redis.io                    7.2                     3-klauzulowa BSD 
