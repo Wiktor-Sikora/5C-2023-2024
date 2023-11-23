@@ -12,6 +12,7 @@ I'm forced to code in PHP 😢
 * [php ifs](/08_11_2023)
 * [php loops](/09_11_2023)
 * [php database management](/15_11_2023)
+* [php session, login](/23_11_2023)
 
 **EE.09 / INF.03 exams:**
 * [EE.09-03-23.01-SG - gazeta / kolor](/EE.09-03-23.01-SG)

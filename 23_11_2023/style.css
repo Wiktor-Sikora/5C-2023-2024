@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.error-msg {
+    color: red;
+}
+
+.success-msg {
+    color: greenyellow;
+}
+
+.link-tab {
+    width: fit-content;
+    padding: 5px;
+    border-color: tan;
+    border-style: solid;
+}
+
+.link-menu {
+    color: black;
+    text-decoration: none;
+}
+
+.link-tab:hover {
+    transform: scale(1.05);
+    transition-duration: 50ms;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
