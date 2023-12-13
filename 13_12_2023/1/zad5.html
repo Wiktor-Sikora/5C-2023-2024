@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 5</title>
+</head>
+<body>
+    <form action="">
+        <H2>Dane szkoły:</H2>
+        <input type="text" id="zip_code" placeholder="kod pocztowy"><br>
+        <input type="text" id="city" placeholder="miejscowość"><br>
+        <input type="text" id="street" placeholder="ulica"><br>
+        <input type="text" id="object_number" placeholder="numer obiektu"><br>
+        <input type="number" id="phone_number" placeholder="numer do sekretariatu"><br>
+    </form>
+    <button onclick="clearData()">Wyczyść</button>
+    <button onclick="calculate()">Oblicz</button>
+
+    <script>
+        function clearData() {
+            document.getElementById("zip_code").value = '25-317'
+            document.getElementById("city").value = 'Kielce'
+            document.getElementById("street").value = 'Prezydenta Ryszarda Kaczorowskiego'
+            document.getElementById("object_number").value = '8'
+            document.getElementById("phone_number").value = '413680570'
+        }
+
+    </script>
+</body>
+</html>

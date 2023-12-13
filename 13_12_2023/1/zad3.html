@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 3</title>
+</head>
+<body>
+    <form id="">
+        <label for="">Rok urodzenia:</label><br>
+        <input type="number" name="year" id="year"><br>
+        <label for="">Miesiąc urodzenia:</label><br>
+        <input type="number" name="month" id="month"><br>
+        <label for="">Dzień urodzenia:</label><br>
+        <input type="number" name="day" id="day"><br>
+        <button id="send_button">Oblicz</button><br>
+    </form>
+    <h2>Twoja długość życia w dniach: <span id="days_alive"></span></h2>
+
+    <script>
+        document.getElementById("send_button").addEventListener("click", function(event) {
+            event.preventDefault()
+
+            let birthDate = new Date(
+                document.getElementById("year").value,
+                document.getElementById("month").value,
+                document.getElementById("day").value
+            )
+            document.getElementById("days_alive").innerHTML = (new Date - birthDate) / 86400000
+        })
+    </script>
+</body>
+</html>

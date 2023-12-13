@@ -1,0 +1,8 @@
+Zady:
+  - Szybsze informowanie użytkownika w przypadku błędnego wypełnienia formularza (strona nie musi się odświeżyć),
+  - Strona może automatycznie wypełnić dane na podstawie wcześniej wprowadzonych (przykładowo kod pocztowy na podstawie miasta i ulicy),
+  - Mniejsze obciążenie serwera który nie musi niepotrzebnie walidować nie poprawnych danych
+
+Walety
+  - Bezużyteczne jeśli użytkownik będzie wysyłał szkodliwego POSTa zrobionego przez siebie w celu ominięcia walidacji,
+  - Często wymagana jest znajomość wyrażeń REGEX które dodają skomplikowania do projektu

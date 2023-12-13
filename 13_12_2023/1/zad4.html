@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 4</title>
+</head>
+<body>
+    <form action="" id="personal_data_form">
+        <label for="">Wpisz swoje Imie:</label></span><br>
+        <input type="text" name="name" id="name" placeholder="Imie"> <span id="name_error" style="color:red;"></span><br>
+        <label for="">Wpisz swoje Nazwisko:</label><br>
+        <input type="text" name="surname" id="surname" placeholder="Nazwisko"> <span id="surname_error" style="color:red;"></span><br>
+        <label for="">Wpisz swój adres email:</label><br>
+        <input type="text" name="email" id="email" placeholder="mail@adres.com"> <span id="email_error" style="color:red;"></span><br>
+        <button id="send_button">Oblicz</button><br>
+    </form>
+
+    <script>
+        document.getElementById("send_button").addEventListener("click", function(event) {
+            event.preventDefault()
+
+            if (/^[a-zA-Z]+$/.test(document.getElementById("name").value)) {
+                document.getElementById("name_error").innerHTML = ""
+            } else {
+                document.getElementById("name_error").innerHTML = "Proszę wpisać swoje poprawne Imie!"
+            }
+            if (/^[a-zA-Z]+$/.test(document.getElementById("surname").value)) {
+                document.getElementById("surname_error").innerHTML = ""
+            } else {
+                document.getElementById("surname_error").innerHTML = "Proszę wpisać swoje poprawne Nazwisko!"
+            }
+            if ( /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,4}$/.test(document.getElementById("email").value)) {
+                document.getElementById("email_error").innerHTML = ""
+            } else {
+                document.getElementById("email_error").innerHTML = "Proszę wpisać swoje poprawny email!"
+            }
+        })
+    </script>
+</body>
+</html>

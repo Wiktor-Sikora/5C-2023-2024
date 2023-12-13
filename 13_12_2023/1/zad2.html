@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 2</title>
+</head>
+<body>
+    <form method="post" id="data_form">
+        <label for="">Podaj swoje Nazwisko i Imię:</label><br>
+        <input type="text" name="name_surname_input" placeholder="Nazwisko, Imię" required><br>
+        <label for="">podaj swój wiek:</label><br>
+        <input type="number" name="age_input" required><br>
+    </form>
+    <button onclick=""  id="send_button">Wykonaj</button><br>
+
+    <h2>Informacje o użytkowniku:</h2>
+    <p>Imie i nazwisko: <span id="name_surname"></span></p>
+    <p>Wiek: <span id="age"></span></p>
+
+    <script>
+        document.getElementById("send_button").addEventListener("click", function(event) {
+            event.preventDefault()
+
+            let form = document.getElementById("data_form")
+            
+            document.getElementById("name_surname").innerHTML = form["name_surname_input"].value
+            document.getElementById("age").innerHTML = form["age_input"].value
+        })
+    </script>
+</body>
+</html>
