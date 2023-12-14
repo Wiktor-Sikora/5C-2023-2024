@@ -1,0 +1,1 @@
+onMouseOver wykrywa czy myszka jest nad elementem gdy onMouseDown wykrywa naciśnięcie przycisku

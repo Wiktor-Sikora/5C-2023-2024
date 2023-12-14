@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 4</title>
+</head>
+<body>
+    <button id="btn" onmouseover="mouseOver()" onmouseleave="mouseOut()">Test</button>
+    <p id="msg"></p>
+
+    <script>
+        function mouseOver() {
+            document.getElementById("msg").innerHTML = "Najchałeś kursorem na przycisk"
+        }
+
+        function mouseOut() {
+            document.getElementById("msg").innerHTML = "Kursor opuścił przycisk"
+        }
+    </script>
+</body>
+</html>

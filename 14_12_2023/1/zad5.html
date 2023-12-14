@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad 5</title>
+</head>
+<body>
+    <button id="btn" onclick="btnClick()">Test</button>
+    <p id="counter">klikłeś przycisk 0 razy</p>
+
+    <script>
+        let counter = 0
+        function btnClick() {
+            counter++
+            document.getElementById("counter").innerHTML = `klikłeś przycisk ${counter} razy`
+        }
+    </script>
+</body>
+</html>

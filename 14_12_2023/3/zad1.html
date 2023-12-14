@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zliczacz pola trójkąta</title>
+</head>
+<body>
+    <button onclick="calculateTriangle()">Oblicz pole trójkąta</button>
+
+    <p id="calculator" style="display: none;">
+        Obliczanie pola Trójkąta:
+
+    </p>
+    <script>
+        function calculateTriangle() {
+            let a = prompt("podaj długość boku a")
+            let b = prompt("podaj długość boku b")
+            let c = prompt("podaj długość boku c")
+
+            let calculator = document.getElementById("calculator")
+            calculator.style = "display: block;"
+
+            calculator.innerText += "obliczanie połowy obwodu trójkąta na podstawie wzoru p = (a+b+c)/2:\n"
+            sleep(1500)
+            let halfCircumference = (a + b + c) / 2
+            calculator.innerText += `(${a} + ${b} + ${c}) / 2 = ${halfCircumference} \n`
+            sleep(300)
+            calculator.innerText += "obliczanie pola trójkąta na podstawie wzoru P = sqrt(p*(p-a)*(p-b)*(p-c)):\n"
+            sleep(1500)
+            let triangleArea = Math.sqrt(halfCircumference * (halfCircumference - a) * (halfCircumference - b)  * (halfCircumference - c))
+            calculator.innerText += `sqrt(${halfCircumference}*(${halfCircumference}}-${a})*(${halfCircumference}-${b})*(${halfCircumference}-${c})) = ${triangleArea} \n`
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+    </script>
+</body>
+</html>

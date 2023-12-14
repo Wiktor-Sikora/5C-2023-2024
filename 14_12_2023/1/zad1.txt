@@ -1,0 +1,19 @@
+onLoad: 
+Po załadowaniu się strony przez przeglądarkę. 
+Można wykorzytać do pokazania okienka z ciasteczkami gdy strona w pełni się załadowana
+
+onSubmit:
+Po wysłaniu formularza.
+Można wykorzytać do pokazania że formularz został wypełniony prawidłowo.
+
+onMouseClick:
+Po kliknięciu myszką w dany element.
+Można wykorzytać do wyświetlenia popup'a np po kliknięciu w hamburger.
+
+onMouseOver:
+Po najechaniu myszką na dany element.
+Można wykorzytać do rozwinięcia elementu na który się najechało.
+
+onMouseOut:
+Po opuszczeniu myszką danego elementu.
+Można wykorzytać do zwinięcia elementu na który się najechało.
