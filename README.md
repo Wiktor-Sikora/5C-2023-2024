@@ -20,5 +20,6 @@ I'm forced to code in PHP 😢
 * [INF.03-01-23.01-SG - malarz](/INF.03-01-23.01-SG)
 * [EE.09-02-22.01-SG - pogoda](/11_10_2023)
 * [EE.09-06-21.01-SG - lotnisko](/26_10_2023)
+* [INF.03-01-22.01-SG - restauracja wszystkie smaki](/INF.03-01-22.01-SG)
 
 **IT exams:**
